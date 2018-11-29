@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>trillo &mdash; Your all-in-one booking app</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search Hotels" list="datalist1">
+                    <!-- challenge part for the advancecd css course, have a search bar functionality -->
+                    <datalist class="datalist1" id="datalist1">
+                        <option class="datalist1__dropdown-list" value="The Langham - Chicago"></option>
+                        <option class="datalist1__dropdown-list" value="Four Seasons Resort Hualalai - Hualalai, Hawaii"></option>
+                        <option class="datalist1__dropdown-list" value="The Jefferson - Washington,D.C."></option>
+                        <option class="datalist1__dropdown-list" value="Montage Kapalua Bay - Lahaina, Hawaii"></option>
+                        <option class="datalist1__dropdown-list" value="Montage Deer Valley – Park City, Utah"></option>
+                        <option class="datalist1__dropdown-list" value="Rancho Valencia Resort & Spa – Rancho Santa Fe, California"></option>
+                        <option class="datalist1__dropdown-list" value="Primland – Meadows of Dan, Virginia"></option>
+                        <option class="datalist1__dropdown-list" value="The Peninsula Beverly Hills – Beverly Hills, California"></option>
+                        <option class="datalist1__dropdown-list" value="Mandarin Oriental – Las Vegas"></option>
+                        <option class="datalist1__dropdown-list" value="Four Seasons Resort Lanai – Lanai City, Hawaii"></option>
+                        <option class="datalist1__dropdown-list" value="The Peninsula – Chicago"></option>
+                        <option class="datalist1__dropdown-list" value="The Greenwich Hotel – New York City"></option>
+                        <option class="datalist1__dropdown-list" value="Four Seasons Resort Maui at Wailea – Wailea, Hawaii"></option>
+                        <option class="datalist1__dropdown-list" value="Wentworth Mansion – Charleston, South Carolina"></option>
+                        <option class="datalist1__dropdown-list" value="Four Seasons Hotel Chicago – Chicago"></option>
+                        <option class="datalist1__dropdown-list" value="The Lowell New York – New York City"></option>
+                        <option class="datalist1__dropdown-list" value="Waldorf Astoria Chicago – Chicago"></option>
+                    </datalist>
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use href="img/sprite.svg#icon-zoom_in"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-playlist_add_check"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-message"></use>
+                        </svg>
+                        <span class="user-nav__notification">10</span>
+                        <!-- challenge part for the advancecd css course, when hovering the message icon, showing a dropdown box -->
+                        <div class="message-dropdown">
+                            <div class="message-dropdown__menu">
+                                <!-- message-dropdown: messages header and setting icon -->
+                                <div class="message-dropdown__item-header">
+                                    <span class="message-dropdown__header">Messages</span>
+                                    <a href="" class="message-dropdown__link">
+                                        <svg class="message-dropdown__icon">
+                                        <use href="img/sprite.svg#icon-wrench"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <!-- message-dropdown: showing part of the messages -->
+                                <div class="message-dropdown__item-content">
+                                    <a href="" class="message-dropdown__content-link">
+                                        <img src="img/user-1.jpg" alt="Message Photo 1" class="message-dropdown__photo">
+                                        <div class="message-dropdown__box">
+                                            <div class="message-dropdown__user">
+                                                <h3 class="message-dropdown__name">
+                                                Lucas Strong
+                                                </h3>
+                                                <p class="message-dropdown__date">
+                                                    Jun 6th,2009
+                                                </p>
+                                            </div>
+                                            <p class="message-dropdown__message">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error distinctio maiores.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="message-dropdown__item-content">
+                                    <a href="" class="message-dropdown__content-link">
+                                        <img src="img/user-2.jpg" alt="Message Photo 2" class="message-dropdown__photo">
+                                        <div class="message-dropdown__box">
+                                            <div class="message-dropdown__user">
+                                                <h3 class="message-dropdown__name">
+                                                Lucy Hope
+                                                </h3>
+                                                <p class="message-dropdown__date">
+                                                    May 9th,1998
+                                                </p>
+                                            </div>                                        
+                                            <p class="message-dropdown__message">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error distinctio maiores.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="message-dropdown__item-content">
+                                    <a href="" class="message-dropdown__content-link">
+                                        <img src="img/user-3.jpg" alt="Message Photo 3" class="message-dropdown__photo">
+                                        <div class="message-dropdown__box">
+                                            <div class="message-dropdown__user">
+                                                <h3 class="message-dropdown__name">
+                                                    Griffin Lucifer
+                                                </h3>
+                                                <p class="message-dropdown__date">
+                                                    Dec 13th,2025
+                                                </p>
+                                            </div>                                          
+                                            <p class="message-dropdown__message">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error distinctio maiores.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- message-dropdown: show all button -->
+                                 <div class="message-dropdown__btn review__link">
+                                    <a href="#" class="btn-text">Show all &rarr;</a>
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-nav__user">
+                        <img src="img/user-me-small.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Fuqiong</span>
+                        <!-- challenge part for the advancecd css course, when hovering the user photo and name, showing a dropdown box -->
+                        <div class="user-dropdown">
+                            <ul class="user-dropdown__menu">
+                                <li class="user-dropdown__item">
+                                    <a href="#" class="user-dropdown__link">
+                                        <svg class="user-dropdown__icon">
+                                            <use href="img/sprite.svg#icon-account_circle"></use>
+                                        </svg>
+                                        <span class="user-dropdown__name">Fuqiong Lei</span>
+                                    </a>
+                                </li>
+                                <li class="user-dropdown__item">
+                                    <a href="#" class="user-dropdown__link">
+                                        <svg class="user-dropdown__icon">
+                                            <use href="img/sprite.svg#icon-person_add"></use>
+                                        </svg>
+                                        <span class="user-dropdown__name">Profile</span>
+                                    </a>
+                                </li>
+                                <li class="user-dropdown__item">
+                                    <a href="#" class="user-dropdown__link">
+                                        <svg class="user-dropdown__icon">
+                                            <use href="img/sprite.svg#icon-content_paste"></use>
+                                        </svg>
+                                        <span class="user-dropdown__name">Current book</span>
+                                    </a>
+                                </li>
+                                <li class="user-dropdown__item">
+                                    <a href="#" class="user-dropdown__link">
+                                        <svg class="user-dropdown__icon">
+                                            <use href="img/sprite.svg#icon-history"></use>
+                                        </svg>
+                                        <span class="user-dropdown__name">Book history</span>
+                                    </a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+
+                                <li class="user-dropdown__item">
+                                    <a href="#" class="user-dropdown__link">
+                                        <svg class="user-dropdown__icon">
+                                            <use href="img/sprite.svg#icon-live_help"></use>
+                                        </svg>
+                                        <span class="user-dropdown__name">Help</span>
+                                    </a>
+                                </li>
+                                <li class="user-dropdown__item">
+                                    <a href="#" class="user-dropdown__link">
+                                        <svg class="user-dropdown__icon">
+                                            <use href="img/sprite.svg#icon-highlight_off"></use>
+                                        </svg>
+                                        <span class="user-dropdown__name">Log out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <!-- side navigation bar -->
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span class="side-nav__item-name">Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-flight_takeoff"></use>
+                                </svg>
+                                <span class="side-nav__item-name">flight</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link side-nav__link--car">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-directions_car"></use>
+                                </svg>
+                                <span class="side-nav__item-name">Car Rental</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span class="side-nav__item-name">tours</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy; 2018 by trillo. All rights reserved.
+                    </div>
+                </nav>
+                <!-- main part of the page -->
+                <main class="hotel-view">
+                    <div class="hotel-view__images">
+                        <!-- density switching for responsive images -->
+                        <figure class="gallery">
+                            <img srcset="img/hotel-1-small.jpg 1x, img/hotel-1-medium.jpg 2x" alt="Hotel image 1" class="gallery__image">
+                            <figcaption class="gallery__caption">Wonderful night view</figcaption>
+                        </figure>
+                        <figure class="gallery">
+                            <img srcset="img/hotel-2-small.jpg 1x, img/hotel-2-medium.jpg 2x" alt="Hotel image 2" class="gallery__image">
+                            <figcaption class="gallery__caption">Comfortable swimming pool</figcaption>
+                        </figure>
+                        <figure class="gallery">
+                            <img srcset="img/hotel-3-small.jpg 1x, img/hotel-3-medium.jpg 2x" alt="Hotel image 3" class="gallery__image">
+                            <figcaption class="gallery__caption">Beautiful beach scene</figcaption>
+                        </figure>
+                        <!-- let the browser choose the best images: responsive image design, there is still a issue, when the width is less than 900px, the images does not occupy the whole width-->
+<!--                         <figure class="gallery">
+                            <img srcset="img/hotel-1.jpg 1500w, img/hotel-1-medium.jpg 900w,img/hotel-1-small.jpg 645w"
+                            sizes="(max-width:75em) 27.3vw,(max-width:56.25em) 33.33vw,(max-width:31.25em) 33.33vw,20.5em"
+                            src="img/hotel-1.jpg" 
+                            alt="Hotel image 1" 
+                            class="gallery__image">
+                            <figcaption class="gallery__caption">Wonderful night view</figcaption>
+                        </figure>
+                        <figure class="gallery">
+                            <img srcset="img/hotel-2.jpg 1500w, img/hotel-2-medium.jpg 900w,img/hotel-2-small.jpg 645w"
+                            sizes="(max-width:75em) 27.3vw,(max-width:56.25em) 33.33vw,(max-width:31.25em) 33.33vw,20.5em"
+                            src="img/hotel-2.jpg" 
+                            alt="Hotel image 2" 
+                            class="gallery__image">
+                             <figcaption class="gallery__caption">Comfortable swimming pool</figcaption>
+                        </figure>
+                        <figure class="gallery">
+                            <img srcset="img/hotel-3.jpg 1500w, img/hotel-3-medium.jpg 900w,img/hotel-3-small.jpg 645w"
+                            sizes="(max-width:75em) 27.3vw,(max-width:56.25em) 33.33vw,(max-width:31.25em) 33.33vw,20.5em"
+                            src="img/hotel-3.jpg" 
+                            alt="Hotel image 3" 
+                            class="gallery__image">
+                            <figcaption class="gallery__caption">Beautiful beach scene</figcaption>
+                        </figure> -->
+
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Las Palmas
+                        </h1>
+
+                        <div class="overview__rating">
+                            <svg class="overview__rating--icon">
+                                <use href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__rating--icon">
+                                <use href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__rating--icon">
+                                <use href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__rating--icon">
+                                <use href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__rating--icon">
+                                <use href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+
+                        <div class="overview__address">
+                            <svg class="overview__address--icon">
+                                <use href="img/sprite.svg#icon-person_pin_circle"></use>
+                            </svg>
+                            <button class="btn-inline overview__address--name">Albufeira,Partugai</button>
+                        </div>
+
+                        <div class="overview__votes">
+                            <div class="overview__votes--rating">9.5</div>
+                            <div class="overview__votes--counts">584 votes</div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <!-- left column of hotel details -->
+                        <div class="despcription">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo assumenda commodi expedita quod, sit vel mollitia adipisci placeat distinctio odio itaque iste.
+                            </p>
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, in, dolore! Tempora enim quam fuga odio ab.
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Close to the beach</li>
+                                <li class="list__item">Breakfast included</li>
+                                <li class="list__item">Free airport shuttle</li>
+                                <li class="list__item">Free wifi in all rooms</li>
+                                <li class="list__item">Air contitioning and heating</li>
+                                <li class="list__item">Pets allowed</li>
+                                <li class="list__item">We speak all languages</li>
+                                <li class="list__item">Perfect for families</li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    Lucy and 3 other friends recommend this hotel.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
+                                    <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
+                                    <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
+                                    <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- right column of hotel details -->
+                        <div class="user-review">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dolorum esse consecte, dolor sit am dolor sit am.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-1.jpg" alt="User Reviewer Photo 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">
+                                            Lucas Strong
+                                        </p>
+                                        <p class="review__user-date">
+                                            Jun 6th,2009
+                                        </p>
+                                    </div>
+                                    <div class="review__rating">8.8</div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dolorum esse consecte.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-2.jpg" alt="User Reviewer Photo 1" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">
+                                            Lucy Hope
+                                        </p>
+                                        <p class="review__user-date">
+                                            Jan 8th,2019
+                                        </p>
+                                    </div>
+                                    <div class="review__rating">9.8</div>
+                                </figcaption>
+                            </figure>
+                            
+                            <div class="review__link">
+                                <a href="#" class="btn-text">Show all &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good news, we have 4 free rooms for your selected dates!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn-visible">Book Now</span>
+                            <span class="btn-invisible">Only 4 rooms left</span>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
