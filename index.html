@@ -38,20 +38,21 @@
                     </datalist>
                     <button class="search__button">
                         <svg class="search__icon">
-                            <use href="img/sprite.svg#icon-zoom_in"></use>
+                            <!-- safari does not support href yet, add xlink -->
+                            <use xlink:href="img/sprite.svg#icon-zoom_in"></use>
                         </svg>
                     </button>
                 </form>
                 <nav class="user-nav">
                     <div class="user-nav__icon-box">
                         <svg class="user-nav__icon">
-                            <use href="img/sprite.svg#icon-playlist_add_check"></use>
+                            <use xlink:href="img/sprite.svg#icon-playlist_add_check"></use>
                         </svg>
                         <span class="user-nav__notification">7</span>
                     </div>
                     <div class="user-nav__icon-box">
                         <svg class="user-nav__icon">
-                            <use href="img/sprite.svg#icon-message"></use>
+                            <use xlink:href="img/sprite.svg#icon-message"></use>
                         </svg>
                         <span class="user-nav__notification">10</span>
                         <!-- challenge part for the advancecd css course, when hovering the message icon, showing a dropdown box -->
@@ -62,7 +63,7 @@
                                     <span class="message-dropdown__header">Messages</span>
                                     <a href="" class="message-dropdown__link">
                                         <svg class="message-dropdown__icon">
-                                        <use href="img/sprite.svg#icon-wrench"></use>
+                                        <use xlink:href="img/sprite.svg#icon-wrench"></use>
                                         </svg>
                                     </a>
                                 </div>
@@ -140,7 +141,7 @@
                                 <li class="user-dropdown__item">
                                     <a href="#" class="user-dropdown__link">
                                         <svg class="user-dropdown__icon">
-                                            <use href="img/sprite.svg#icon-account_circle"></use>
+                                            <use xlink:href="img/sprite.svg#icon-account_circle"></use>
                                         </svg>
                                         <span class="user-dropdown__name">Fuqiong Lei</span>
                                     </a>
@@ -148,7 +149,7 @@
                                 <li class="user-dropdown__item">
                                     <a href="#" class="user-dropdown__link">
                                         <svg class="user-dropdown__icon">
-                                            <use href="img/sprite.svg#icon-person_add"></use>
+                                            <use xlink:href="img/sprite.svg#icon-person_add"></use>
                                         </svg>
                                         <span class="user-dropdown__name">Profile</span>
                                     </a>
@@ -156,7 +157,7 @@
                                 <li class="user-dropdown__item">
                                     <a href="#" class="user-dropdown__link">
                                         <svg class="user-dropdown__icon">
-                                            <use href="img/sprite.svg#icon-content_paste"></use>
+                                            <use xlink:href="img/sprite.svg#icon-content_paste"></use>
                                         </svg>
                                         <span class="user-dropdown__name">Current book</span>
                                     </a>
@@ -164,7 +165,7 @@
                                 <li class="user-dropdown__item">
                                     <a href="#" class="user-dropdown__link">
                                         <svg class="user-dropdown__icon">
-                                            <use href="img/sprite.svg#icon-history"></use>
+                                            <use xlink:href="img/sprite.svg#icon-history"></use>
                                         </svg>
                                         <span class="user-dropdown__name">Book history</span>
                                     </a>
@@ -174,7 +175,7 @@
                                 <li class="user-dropdown__item">
                                     <a href="#" class="user-dropdown__link">
                                         <svg class="user-dropdown__icon">
-                                            <use href="img/sprite.svg#icon-live_help"></use>
+                                            <use xlink:href="img/sprite.svg#icon-live_help"></use>
                                         </svg>
                                         <span class="user-dropdown__name">Help</span>
                                     </a>
@@ -182,7 +183,7 @@
                                 <li class="user-dropdown__item">
                                     <a href="#" class="user-dropdown__link">
                                         <svg class="user-dropdown__icon">
-                                            <use href="img/sprite.svg#icon-highlight_off"></use>
+                                            <use xlink:href="img/sprite.svg#icon-highlight_off"></use>
                                         </svg>
                                         <span class="user-dropdown__name">Log out</span>
                                     </a>
@@ -199,7 +200,7 @@
                         <li class="side-nav__item side-nav__item--active">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-home"></use>
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
                                 </svg>
                                 <span class="side-nav__item-name">Hotel</span>
                             </a>
@@ -207,7 +208,7 @@
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-flight_takeoff"></use>
+                                    <use xlink:href="img/sprite.svg#icon-flight_takeoff"></use>
                                 </svg>
                                 <span class="side-nav__item-name">flight</span>
                             </a>
@@ -215,7 +216,7 @@
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link side-nav__link--car">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-directions_car"></use>
+                                    <use xlink:href="img/sprite.svg#icon-directions_car"></use>
                                 </svg>
                                 <span class="side-nav__item-name">Car Rental</span>
                             </a>
@@ -223,7 +224,7 @@
                         <li class="side-nav__item">
                             <a href="#" class="side-nav__link">
                                 <svg class="side-nav__icon">
-                                    <use href="img/sprite.svg#icon-map"></use>
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
                                 </svg>
                                 <span class="side-nav__item-name">tours</span>
                             </a>
@@ -283,25 +284,25 @@
 
                         <div class="overview__rating">
                             <svg class="overview__rating--icon">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
                             </svg>
                             <svg class="overview__rating--icon">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
                             </svg>
                             <svg class="overview__rating--icon">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
                             </svg>
                             <svg class="overview__rating--icon">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
                             </svg>
                             <svg class="overview__rating--icon">
-                                <use href="img/sprite.svg#icon-star"></use>
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
                             </svg>
                         </div>
 
                         <div class="overview__address">
                             <svg class="overview__address--icon">
-                                <use href="img/sprite.svg#icon-person_pin_circle"></use>
+                                <use xlink:href="img/sprite.svg#icon-person_pin_circle"></use>
                             </svg>
                             <button class="btn-inline overview__address--name">Albufeira,Partugai</button>
                         </div>
